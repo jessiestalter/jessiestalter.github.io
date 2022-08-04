@@ -7,11 +7,17 @@
     src: url(https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap);
 }
 
+/* Fade In Style */
+
+.js body { display: none; }
+
 /* Header Styles */
 
 #mainHeader {
     display: flex;
     height: 75px;
+    min-width: 100vw;
+    margin-left: -8px;
 }
 
 #mainHeader ul {
@@ -21,9 +27,22 @@
     margin: auto;
 }
 
-#headerNavLinks li {
-    padding: 5px;
+#myLogo {
+    height: 50px;
 }
+
+#headerNavLinks li {
+    padding: 6px;
+}
+
+#headerNavLinks a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* #headerNavLinks a:hover {
+    text-decoration: underline;
+} */
 
 #headerSocialLinks {
     justify-content: right;
@@ -32,27 +51,33 @@
 }
 
 #headerSocialLinks li {
-    padding: 5px;
+    padding: 6px;
+}
+
+#linkedInImg, #githubImg {
+    height: 25px;
+}
+
+#resumeImg {
+    height: 28px;
 }
 
 /* Landing Page Styles */
 #landingSection {
     display: flex;
-    height: 85vh;
 }
 
 #landingText {
     flex: 50%;
     height: 100%;
-    /* text-align: center; */
     margin-left: 4%;
     margin-top: 135px;
     font-family: 'Merriweather', serif;
 }
 
 #landingText h1 {
-    font-size: 68px;
-    margin-top: 5px;
+    font-size: 74px;
+    margin-top: 0px;
     margin-bottom: 5px;
 }
 
@@ -72,8 +97,45 @@
 
 #landingGraphic {
     flex: 50%;
-    /* height: 80vh; */
     background-color: #0000FF;
     margin: 15px 30px;
-    border-radius: 40px;
+    border-radius: 20px;
+    opacity: 80%;
+    height: 80vh;
 }
+
+#infoSection {
+    display: grid;
+    row-gap: 10px;
+}
+
+#aboutSection, #educationSection, #interestsSection {
+    display: flex;
+}
+
+#aboutGraphic, #educationGraphic, #interestsGraphic {
+    flex: 33%;
+    /* width: calc(50% - 2em); */
+    /* margin: 0 8%; */
+    border-radius: 20px;
+    height: 250px;
+    opacity: 80%;
+}
+
+#aboutGraphic {
+    background-color: yellow;
+}
+
+#educationGraphic {
+    background-color: blue;
+}
+
+#interestsGraphic {
+    background-color: red;
+}
+
+/* #educationGraphic {
+    flex: 33%;
+    margin: 0 5%;
+    background-color: black;
+} */
